@@ -1,0 +1,2 @@
+declare module 'taro-lottie' {
+}
