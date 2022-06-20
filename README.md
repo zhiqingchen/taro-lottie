@@ -58,7 +58,7 @@ export default class Lottie extends Component {
 
 ## Component API
 
-> Based on [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native) project
+> Based on [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native) project, under the Apache License 2.0.
 
 | Prop | Description | Default | Platform |
 |---|---|---|---|
@@ -80,7 +80,7 @@ export default class Lottie extends Component {
 |**`textFiltersIOS`**| **Only iOS**, an array of objects denoting text layers by KeyPath and a new string value. |`[]`| iOS |
 
 ## Methods (Imperative API):
-> Based on [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native) project
+> Based on [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native) project, under the Apache License 2.0.
 
 | Method | Description |
 |---|---|
