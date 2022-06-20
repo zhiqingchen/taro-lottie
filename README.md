@@ -26,11 +26,11 @@ pod install
 ## Basic Usage
 
 ```tsx
-import LottieView from 'taro-lottie'
+import LottieView, { LottieViewType } from 'taro-lottie'
 import lottieData from './lottieData.json'
 
 export default class Lottie extends Component {
-  animation
+  animation: LottieViewType | null = null
   // miniprogram needs to init after page onReady event
   onReady(){
     this.animation?.init()

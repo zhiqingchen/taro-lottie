@@ -1,5 +1,14 @@
 import type { AnimatedLottieViewProps } from 'lottie-react-native'
-import { ComponentType } from 'react'
+import type AnimatedLottieView from 'lottie-react-native'
+import { ComponentType, Ref } from 'react'
+
+interface LottieViewProps extends AnimatedLottieViewProps {
+  ref: Ref<LottieView>
+}
+
+interface LottieView extends AnimatedLottieView {
+  init(): Promise<boolean>
+}
 
 let implementation
 if (process.env.TARO_ENV === 'weapp') {
@@ -9,5 +18,6 @@ if (process.env.TARO_ENV === 'weapp') {
 } else {
   implementation = require('./lib/rn')
 }
-const lottie: ComponentType<AnimatedLottieViewProps> = implementation.default || implementation
+const lottie: ComponentType<LottieViewProps> = implementation.default || implementation
+export type LottieViewType = LottieView
 export default lottie

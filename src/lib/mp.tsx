@@ -57,7 +57,7 @@ class LottieView extends Component<AnimatedLottieViewProps, LottieViewState> {
     this.animation.play()
   }
   reset() {
-    this.animation.stop()
+    this.animation.goToAndPlay(0, true)
   }
   pause() {
     this.animation.pause()
