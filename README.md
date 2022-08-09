@@ -10,11 +10,11 @@ yarn add taro-lottie
 
 ### Extra Installing For React Native
 
-Install `lottie-react-native` (latest) and `lottie-ios` (3.2.3):
+Install `lottie-react-native` (latest) and `lottie-ios` (3.4.0):
 
 ```
 yarn add lottie-react-native
-yarn add lottie-ios@3.2.3
+yarn add lottie-ios@3.4.0
 ```
 
 Go to your ios folder and run:
