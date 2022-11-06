@@ -30,7 +30,7 @@ class LottieView extends Component<AnimatedLottieViewProps, LottieViewState> {
   }
   componentWillUnmount() {
     this.props.onAnimationFinish && this.animation.removeEventListener('complete', this.props.onAnimationFinish)
-    this.animation.destroy()
+    this.animation?.destroy()
   }
   componentDidUpdate(prevProps): void {
     const { progress, speed } = this.props
