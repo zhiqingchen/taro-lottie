@@ -1,5 +1,5 @@
 import { Canvas } from '@tarojs/components'
-import Taro, { createSelectorQuery } from '@tarojs/taro'
+import { createSelectorQuery, getSystemInfoSync } from '@tarojs/taro'
 import lottie from 'lottie-miniprogram'
 import type { AnimatedLottieViewProps } from 'lottie-react-native'
 import React, { Component } from 'react'
@@ -74,7 +74,7 @@ class LottieView extends Component<AnimatedLottieViewProps, LottieViewState> {
             const context = canvas.getContext('2d')
             
             // scale canvas to adapt dpr
-            const dpr = Taro.getSystemInfoSync().pixelRatio
+            const dpr = getSystemInfoSync().pixelRatio
             canvas.width = parseFloat(width) * dpr
             canvas.height = parseFloat(height) * dpr
             context.scale(dpr, dpr)
